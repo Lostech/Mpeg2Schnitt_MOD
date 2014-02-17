@@ -1,0 +1,89 @@
+##############################
+#                            #
+# Mpeg2Schnitt MOD Extension #
+#                            #
+##############################
+
+
+Version 0.8:
+------------
+-DVD Fenster wird bei Dateimedia Erkennung nun korrekt aktualisiert
+-bessere Dateimedia Erkennung
+-Anpassung an neue MediaInfo DLL (getestet mit Version 0.7.54)
+-FAT/FAT32 Partition Check bei ProjectX Umwandlungen größer 4GB (Dateisystem Einschränkung, die zu Fehlern führt)
+-möglicher Crash während ProjectX Umwandlung behoben
+-"Standard.mau" angepasst, um automatisch zusätzliche von ProjectX erzeugte Tonspuren zu laden -> AudioTrennzeichen="-0*."
+
+
+
+Version 0.7:
+------------
+-globale Systemmessages werden nicht mehr an Mpeg2Schnitt Hauptprogramm geleitet wenn das DVD oder ProjectX Fenster offen ist
+-Warnhinweis in Logfenster wenn automatische kapitel nicht erzeugt werden können
+-Patcher Programm überarbeitet (aktuell Version 1.5, ältere Versionen können nicht mehr verwendet werden)
+
+
+
+Version 0.6:
+------------
+-weitere mögliche Crashs der externen MediaInfo.dll werden abgefangen
+-Build Datum wird in der MOD Info angezeigt
+
+
+
+Version 0.5:
+------------
+-Aufruf des ProjectX Import Fensters nun ohne in Einzelfällen auftretende Fehlermeldung
+-wenn die externe MediaInfo.dll crasht wird die Fehlermeldung abgefangen
+-wenn die externe MediaInfo.dll crasht wird ein definierter Wert der gecrashten DLL Funktion gesetzt
+-automatische Medientyp Erkennung beim ProjectX Import nun bei Bedarf abschaltbar
+-bei der automatischen Suche nach JAVA.EXE wird der Ordner "i386" wird ignoriert, da hier eine inkompatible JAVA.EXE vorhanden ist
+
+
+
+Version 0.4:
+------------
+
+-beim Hinzufügen von Dateien in der ProjectX Importliste wird versucht, den Codec Typ der Datei auszuwerten
+-bei der automatisierten Suche nach benötigten Programmdateien wird nun eine echte Fortschrittsanzeige eingeblendet
+-bei der automatisierten Suche nach benötigten Programmdateien werden nun Hinweismeldungen eingeblendet
+-die automatisierte Suche nach benötigten Programmdateien kann nun abgebrochen werden
+-Implementation eines DVD Erstellungsmenüs mit mehreren TitleSets
+-Möglichkeit der Erstellung von DVD Daten (IFO&VOB)
+-Möglichkeit der Erstellung eines DVD ISO Images und direktes DVD brennen (NERO Burning ROM Installation benötigt)
+-optional automatisches Öffnen des DVD Erstellungsmenüs nach Schneidevorgang in Mpeg2Schnitt
+-optional automatische DVD Erzeugung nach Schneidevorgang in Mpeg2Schnitt
+-globale Tasten Hotkeys im Hauptprogramm werden abgeschaltet, wenn ein MOD Extension Menü offen ist
+-kleinere Korrekturen
+-Patcher Programm überarbeitet (aktuell Version 1.3, ältere Versionen können nicht mehr verwendet werden)
+
+
+
+Version 0.3:
+------------
+
+-bei der automatisierten Suche nach JAVA.EXE und PROJECTX.JAR werden Links (*.lnk) ignoriert
+-"Datei öffnen" Dialog für um Filter für TechniSat DigiCorder Dateien ergänzt
+-Reihenfolge der Import Dateien kann nun verschoben werden
+-Anzeige des Dateityps (eigene Spalte)
+-das Log der letzten ProjectX Umwandlung wird im Programm Ordner unter "ProjectX.log" gespeichert
+
+
+
+Version 0.2:
+------------
+
+-"JvSelectDirectory" Dialog gegen "JvBrowseForFolderDialog" Dialog ausgetauscht
+-neue Funktion "ProjectX Ausgabe Ordner aufräumen"
+-automatisiertes Suchen nach JAVA.EXE und PROJECTX.JAR
+-ProjectX kann aus Mpeg2Schnitt heraus mit GUI gestartet werden
+
+
+
+Version 0.1:
+------------
+
+-erste Version
+-Integration von ProjectX in Mpeg2Schnitt
+-Patcher Programm zur Einbindung des MOD Extension Quellcodes in bestehenden Mpeg2Schnitt Quellcode
+

@@ -1,0 +1,49 @@
+object Hinweisfenster: THinweisfenster
+  Left = 668
+  Top = 464
+  ActiveControl = OKTaste
+  BorderIcons = []
+  BorderStyle = bsSingle
+  Caption = 'Hinweis'
+  ClientHeight = 100
+  ClientWidth = 592
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  Scaled = False
+  Visible = True
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 14
+  object Hinweistext: TLabel
+    Left = 0
+    Top = 0
+    Width = 592
+    Height = 61
+    Align = alTop
+    Alignment = taCenter
+    AutoSize = False
+    Layout = tlCenter
+    WordWrap = True
+  end
+  object OKTaste: TBitBtn
+    Left = 259
+    Top = 66
+    Width = 75
+    Height = 26
+    Caption = 'OK'
+    TabOrder = 0
+    OnClick = OKTasteClick
+  end
+  object Autoschliessen: TTimer
+    Enabled = False
+    OnTimer = AutoschliessenTimer
+    Left = 16
+    Top = 30
+  end
+end

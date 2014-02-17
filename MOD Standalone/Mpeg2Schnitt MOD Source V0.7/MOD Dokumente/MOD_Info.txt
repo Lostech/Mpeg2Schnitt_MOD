@@ -1,0 +1,103 @@
+###################################
+#                                 #
+# Mpeg2Schnitt MOD Extension Info #
+#                                 #
+###################################
+
+
+
+Info:
+-----
+
+Die Mpeg2Schnitt MOD Extension ist eine Erweiterung des Programms Mpeg2Schnitt von
+Martin Dienert (www.mdienert.de/mpeg2schnitt/).
+Die MOD Extension erlaubt die Integration von ProjectX im Mpeg2Schnitt Programm,
+das Erstellen von DVD Daten (IFO&VOB), entsprechenden DVD ISO Images sowie das Brennen
+dieser Images mit NERO Burning ROM.
+Die vorhandenen originalen Mpeg2Schnitt Funktionen bleiben unverändert.
+
+
+
+Copyright (soweit nicht anders vermerkt):
+-----------------------------------------
+
+Mpeg2Schnitt (Basis für die MOD Extension):
+	Copyright (C) 2003  Martin Dienert
+	Homepage: http://www.mdienert.de/mpeg2schnitt/
+	E-Mail:   m.dienert@gmx.de
+
+MOD Extension (Erweiterung des ursprünglichen Mpeg2Schnitt Programms):
+	Copyright (C) 2006-2008  Lostech
+	Homepage: http://www.lostech.de.vu
+	E-Mail:   lostech@gmx.de
+
+
+
+Lizenz (soweit nicht anders vermerkt):
+--------------------------------------
+
+Da der Mpeg2Schnitt Quellcode von Martin Dienert unter der GPL V2 Lizenz (siehe "GPL.txt")
+veröffentlich wurde, wird der Quellcode der MOD Extension ebenfalls unter der GPL V2 Lizenz
+zur Verfügung gestellt.
+
+
+
+Vorraussetzungen:
+-----------------
+
+Um eine Mpeg2Schnitt "MOD" Version kompilieren zu können, sind folgende Vorraussetzungen nötig:
+
+1.) Mpeg2Schnitt Quellcode
+Die MOD Extension wurde auf Basis der Version 0.87 des Mpeg2Schnitt Quellcodes entwickelt und an
+die neueren Versionen auf Basis von V0.9x angepasst.
+Prinzipiell sollte es auch ohne Probleme möglich sein, die MOD Extension in andere Versionsstände
+zu integrieren. Empfohlen ist aber die Version V0.9x von Mpeg2Schnitt.
+
+2.) Mpeg2Schnitt MOD Extension Quellcode
+Zusätzlich zur Mpeg2Schnitt Quellcode Basis wird der MOD Extension Quellcode benötigt, der
+in den Mpeg2Schnitt Quellcode Ordner kopiert werden muß.
+
+3.) JEDI Visual Component Library
+Die MOD Extension verwendet einige Komponenten aus der "JEDI Visual Component Library", die
+auf der Homepage http://homepages.borland.com/jedi/jvcl/ unter der Mozilla Public License
+verfügbar ist.
+
+
+
+Externe Programmdateien:
+------------------------
+
+Mpeg2Schnitt MOD nutzt folgende externe Programmdateien, die sich im gleichen Ordner wie
+das Hauptprogramm befinden müssen:
+
+1.) PROJECTX.JAR		(http://sourceforge.net/projects/project-x/)
+2.) DVDAUTHOR.EXE		(http://dvdauthor.sourceforge.net/)
+3.) MKISOFS.EXE			(http://freshmeat.net/projects/mkisofs)
+4.) MPLEX.EXE			(http://mjpeg.sourceforge.net/)
+5.) TCMPLEX-PANTELTJE.EXE	(http://panteltje.com/panteltje/dvd/index.html bzw. http://tekcode.te.funpic.de)
+6.) MEDIAINFO.DLL		(http://mediainfo.sourceforge.net/)
+
+Sollte eines der hier aufgeführten Programme in einer Cygwin Umgebung kompiliert worden sein, so
+müssen sich zusätzlich noch die entsprechenden Cygwin Runtime DLL Dateien im Ordner befinden.
+
+Optional werden außerdem bei einer vorhandenen NERO Burning ROM (http://www.nero.com/deu/index.html)
+Installation die DVD Brenn Funktionen in der MOD Extension freigschaltet.
+
+
+
+Integration der MOD Extension in Mpeg2Schnitt:
+----------------------------------------------
+
+Die MOD Extension kann auf 2 Arten in den Mpeg2Schnitt Quellcode integriert werden:
+
+1.) Patch
+Mit der "Patcher.exe" kann man automatisiert die benötigten Mpeg2Schnitt Quellcode
+Änderungen vornehmen lassen (siehe "MOD_Patcher_Anleitung.txt"):
+
+2.) Manuell
+Da nur wenige Zeilen im original Mpeg2Schnitt Quellcode geändert/ergänzt werden müssen,
+kann man die Änderungen auch selber vornehmen (siehe "MOD_Einbauanleitung.txt").
+
+Es reicht aus, nur eine der beiden aufgeführten Methoden durchzuführen.
+
+

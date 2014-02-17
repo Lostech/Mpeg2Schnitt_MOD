@@ -1,0 +1,31 @@
+##############################
+#                            #
+# Mpeg2Schnitt MOD Extension #
+#                            #
+##############################
+
+
+Offene Punkte:
+--------------
+
+-zusätzliche Fehler Abfangroutinen
+
+
+
+Version 0.2:
+------------
+
+-"JvSelectDirectory" Dialog gegen "JvBrowseForFolderDialog" Dialog ausgetauscht
+-neue Funktion "ProjectX Ausgabe Ordner aufräumen"
+-automatisiertes Suchen nach JAVA.EXE und PROJECTX.JAR
+-ProjectX kann aus Mpeg2Schnitt heraus mit GUI gestartet werden
+
+
+
+Version 0.1:
+------------
+
+-erste Version
+-Integration von ProjectX in Mpeg2Schnitt
+-Patcher Programm zur Einbindung des MOD Extension Quellcodes in bestehenden Mpeg2Schnitt Quellcode
+

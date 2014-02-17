@@ -1,0 +1,23 @@
+################################################
+#                                              #
+# Mpeg2Schnitt MOD Extension Patcher Anleitung #
+#                                              #
+################################################
+
+
+
+Um die MOD Extension in den Quellcode von Mpeg2Schnitt einzubauen, kann man
+das Quellcode Patcher Programm verwenden.
+Das "Patcher.exe" Programm muß lediglich einmal im Ordner mit dem Mpeg2Schnitt
+Quellcode gestartet werden. Es werden dann automatisch an den richtigen
+Positionen im Mpeg2Schnitt Quellcode die Anpassungen gemacht, um die MOD Extension
+in das Projekt aufnehmen zu können.
+Die nicht mehr benötigten Original Quellcode Zeilen werden nicht gelöscht, sondern
+nur auskommentiert. Neu hinzugefügte Zeilen werden ebenfalls mit einem zusätzlichen
+Kommentar versehen.
+Wer das Patcher Programm nicht verwenden will, kann die benötigten Änderungen auch
+per manuell im Mpeg2Schnitt Quellcode vornehmen (siehe "MOD_Einbauanleitung.txt").
+Gerprüft wurde der Patcher mit der Mpeg2Schnitt Quellcode Version 0.87. Prinzipiell
+sollte der Patcher aber auch mit anderen Quellcode Versionen funktionieren, da nur
+generell nur sehr wenige Veränderungen an Stellen vorgenommen werden, die in der
+Regeln in den meisten Quellcode Versionen bestehen bleiben.

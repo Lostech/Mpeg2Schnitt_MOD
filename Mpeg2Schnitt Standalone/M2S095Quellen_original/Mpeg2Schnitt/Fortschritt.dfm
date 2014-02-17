@@ -1,0 +1,50 @@
+object Fortschrittsfenster: TFortschrittsfenster
+  Left = 810
+  Top = 463
+  ActiveControl = AbbrechenTaste
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Fortschrittsfenster'
+  ClientHeight = 119
+  ClientWidth = 457
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OldCreateOrder = True
+  Position = poMainFormCenter
+  Scaled = False
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 14
+  object Fortschrittstext: TLabel
+    Left = 21
+    Top = 10
+    Width = 414
+    Height = 31
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Text'
+    WordWrap = True
+  end
+  object AbbrechenTaste: TButton
+    Left = 187
+    Top = 78
+    Width = 81
+    Height = 31
+    Caption = 'Abbrechen'
+    TabOrder = 0
+    OnClick = AbbrechenTasteClick
+  end
+  object Fortschrittsbalken: TProgressBar
+    Left = 21
+    Top = 45
+    Width = 415
+    Height = 17
+    TabOrder = 1
+  end
+end

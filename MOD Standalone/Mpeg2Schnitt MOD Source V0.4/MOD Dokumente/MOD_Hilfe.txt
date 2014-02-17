@@ -1,0 +1,71 @@
+####################################
+#                                  #
+# Mpeg2Schnitt MOD Extension Hilfe #
+#                                  #
+####################################
+
+
+
+Hilfe:
+------
+
+Die Mpeg2Schnitt MOD Extension erweitert das Programm Mpeg2Schnitt um die
+Möglichkeit, diverse Mediendateien indirekt durch ProjectX zu importieren,
+d.h. die ausgwählten Dateien werden durch ProjectX aufbereitet, bevor sie
+in Mpeg2Schnitt geladen werden.
+
+
+
+Einstellungen und Menüs:
+------------------------
+
+Bevor dies möglich ist, müssen einmalig lediglich nur wenige Einstellungen
+vorgenommen werden:
+
+1.) Pfad zu ProjectX
+In diesem Menü muß der Pfad zum ProjectX Programm Archiv (in der Regel
+die Datei "ProjectX.jar") angegeben werden.
+
+2.) Pfad zur JAVA Runtime
+In diesem Menü muß der Pfad zur "JAVA.EXE" angegeben werden. Diese befindet
+sich im "BIN" Ordner der JAVA Installation z.B. im Pfad
+"C:\Programme\Java\jre1.5.0_09\bin" oder ähnlich.
+
+3.) Ausgabe Ordner für ProjectX
+In diesem Menü wird der Ordner angegeben, in dem ProjectX seine aufbereiteten
+Dateien speichert. Wird dieser Ordner nicht angegeben, so werden die Dateien im
+Mpeg2Schnitt MOD Ordner gespeichert.
+Diese umgewandelten Dateien verbleiben auch nach Programmende im angegebenen
+Ordner.
+
+4.) ProjectX Ausgabe Ordner aufräumen
+Dieser Menüpunkt bewirkt, daß alle von ProjectX angelegten Dateitypen:
+	MPV/M2V/MPA/MP2/AC3/IDD/TXT
+gelöscht werden. Andere Dateien werden nicht gelöscht.
+
+5.) Programmpfade automatisch suchen
+Dieser Menüpunkt startet eine automatische Suche auf dem Laufwerk C:\ nach
+den benötigten Dateien "PROJECTX.JAR" und "JAVA.EXE".
+Sind die Dateien anders benannt oder befinden sie sich nicht auf dem Laufwerk C:,
+so müssen die Pfadangaben manuell eingestellt werden.
+
+6.) ProjectX starten
+ProjectX kann mit GUI aus Mpeg2Schnitt gestartet werden.
+
+
+
+ProjectX Funktionen:
+--------------------
+
+Taste			Funktion
++			Datei zur Importliste hinzufügen
+-			Datei von Importliste löschen
+Liste löschen		Importliste löschen
+Import			Importdateien mit ProjectX umwandeln und in Mpeg2Schnitt laden
+Umwandlung		Importdateien mit ProjectX nur umwandeln
+Beenden			Import Fenster schließen
+hoch			ausgewählter Eintrag in Import Liste nach oben schieben
+runter			ausgewählter Eintrag in Import Liste nach unten schieben
+
+
+

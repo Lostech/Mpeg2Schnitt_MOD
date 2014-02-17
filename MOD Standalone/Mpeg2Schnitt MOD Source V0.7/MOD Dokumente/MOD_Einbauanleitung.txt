@@ -1,0 +1,132 @@
+##############################################
+#                                            #
+# Mpeg2Schnitt MOD Extension Einbauanleitung #
+#                                            #
+##############################################
+
+
+
+Einbauanleitung:
+----------------
+
+Wenn das Quellcode Patcher Programm (siehe "MOD_Patcher_Anleitung.txt") nicht verwendet wird,
+kann man die MOD Extension auch manuell in den Quellcode von Mpeg2Schnitt einbauen.
+
+Hierzu müssen ab MOD Version 0.7 folgende Änderungen im Mpeg2Schnitt Quellcode V0.9 vorgenommen werden:
+
+
+===============================================================================
+In Datei "Mpeg2Schnitt.dpr"
+===============================================================================
+
+-------------------------------------------------------------------------------
+1. Patch:
+In Projektdatei "Mpeg2Schnitt.dpr" nach Zeile
+  ThemeHandling in 'ThemeHandling.pas',
+folgende Zeile einfügen
+  ProjectX in 'ProjectX.pas' {ProjectXForm},
+  ProjectX in 'ProjectX.pas' {ProjectXForm}, DVD in 'DVD.pas' {DVDForm},
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+2. Patch:
+In Projektdatei "Mpeg2Schnitt.dpr" nach Zeile
+  Application.CreateForm(TArbeitsumgebungFenster, ArbeitsumgebungFenster);
+folgende Zeilen einfügen
+  Application.CreateForm(TProjectXForm, ProjectXForm);
+  Application.CreateForm(TDVDForm, DVDForm);
+-------------------------------------------------------------------------------
+
+
+===============================================================================
+In Datei "Hauptfenster.pas"
+===============================================================================
+
+-------------------------------------------------------------------------------
+1. Patch:
+In Unit "Hauptfenster.pas" nach Zeile
+  ActnList,
+folgende Zeile einfügen
+(alt)  ProjectX,
+(neu)  ProjectX, DVD,
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+2. Patch:
+In Unit "Hauptfenster.pas" nach Zeile
+    PROCEDURE Dateieigenschaften;
+folgende Zeile auskommentieren oder löschen
+    PROCEDURE AlleNachrichten(var Msg: TMsg; var Handled: Boolean);
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+3. Patch:
+In Unit "Hauptfenster.pas" nach Zeile
+    FUNCTION DateilisteaktualisierenAudio(Audioknoten: TTreeNode; Listebehalten: Boolean; Positioneinstellen: Boolean = True): Integer;
+folgende Zeile auskommentieren oder löschen
+    FUNCTION Dateilisteaktualisieren(Knoten: TTreeNode; Positioneinstellen: Boolean = True): Integer;
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+4. Patch:
+In Unit "Hauptfenster.pas" nach Zeile
+(alt)    PROCEDURE Projektgeaendert_zuruecksetzen;
+(neu)    FUNCTION BMPBildlesen(Position: LongInt; Weite: Integer; Positionwiederherstellen, IFrame: Boolean): TBitmap;
+folgende Zeile auskommentieren oder löschen
+    PROCEDURE SchiebereglerPosition_setzen(Pos: LongInt; verwendeUndo: Boolean = False);
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+5. Patch:
+In Unit "Hauptfenster.pas" nach Zeile
+    FUNCTION Videodateieinfuegen(Dateiname: STRING): Integer;
+folgende Zeile auskommentieren oder löschen
+    FUNCTION Dateilisteeinfuegen(Dateinamen: TStringList): Integer;
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+6. Patch:
+In Unit "Hauptfenster.pas" nach Zeile
+    PROCEDURE Fortschrittsfensteranzeigen;
+folgende Zeile auskommentieren oder löschen
+    PROCEDURE Fortschrittsfensterverbergen;
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+7. Patch:
+In Unit "Hauptfenster.pas" nach Zeile
+    PROCEDURE Optionenlesen;
+folgende Zeilen einfügen
+    PROCEDURE AlleNachrichten(var Msg: TMsg; var Handled: Boolean);
+    PROCEDURE Fortschrittsfensterverbergen;
+    PROCEDURE SchiebereglerPosition_setzen(Pos: LongInt; verwendeUndo: Boolean = False);
+    FUNCTION Dateilisteeinfuegen(Dateinamen: TStringList): Integer;
+    FUNCTION Dateilisteaktualisieren(Knoten: TTreeNode; Positioneinstellen: Boolean = True): Integer;
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+8. Patch:
+In Unit "Hauptfenster.pas" nach Zeile
+  MpegEdit: TMpegEdit;
+folgende Zeile einfügen
+{$I MpegEditFormCreate.inc}
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+9. Patch:
+In Unit "Hauptfenster.pas" in Funktion "procedure TMpegEdit.FormCreate(Sender: TObject);" nach Zeile
+  Mpeg2Fenster.Tempo := 1;
+2 Zeilen weiter folgende Zeile einfügen
+{$I MpegEditFormCreate2.inc}
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+10. Patch:
+In Unit "Hauptfenster.pas" in Funktion "PROCEDURE TMpegEdit.Spracheeinlesen;" nach Zeile
+    KapitelListeSpracheaendern(Spracheladen);
+5 Zeilen weiter folgende Zeilen einfügen
+  ProjectXForm.AktualisiereProjectXSprache;
+  DVDForm.AktualisiereDVDSprache;
+-------------------------------------------------------------------------------
+
+

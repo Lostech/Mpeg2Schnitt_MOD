@@ -1,0 +1,103 @@
+####################################
+#                                  #
+# Mpeg2Schnitt MOD Extension Hilfe #
+#                                  #
+####################################
+
+
+
+Hilfe:
+------
+
+Die Mpeg2Schnitt MOD Extension erweitert das Programm Mpeg2Schnitt um die
+Möglichkeit, diverse Mediendateien indirekt durch ProjectX zu importieren,
+d.h. die ausgwählten Dateien werden durch ProjectX aufbereitet, bevor sie
+in Mpeg2Schnitt geladen werden.
+Außerdem kann bei Bedarf eine DVD aus den geschnittenen Daten erzeugt werden.
+
+
+
+
+Einstellungen und Menüs:
+------------------------
+
+Bevor dies möglich ist, müssen einmalig lediglich nur wenige Einstellungen
+vorgenommen werden. Alle Einstellungen und Funktionen sind über folgende
+Menüs erreichbar:
+
+
+1.) Menüpunkt "ProjectX"
+
+1.1) Pfad zu ProjectX
+In diesem Menü muß der Pfad zum ProjectX Programm Archiv (in der Regel
+die Datei "ProjectX.jar") angegeben werden.
+
+1.2) Pfad zur JAVA Runtime
+In diesem Menü muß der Pfad zur "JAVA.EXE" angegeben werden. Diese befindet
+sich im "BIN" Ordner der JAVA Installation z.B. im Pfad
+"C:\Programme\Java\jre1.5.0_09\bin" oder ähnlich.
+
+1.3) Ausgabe Ordner für ProjectX
+In diesem Menü wird der Ordner angegeben, in dem ProjectX seine aufbereiteten
+Dateien speichert. Wird dieser Ordner nicht angegeben, so werden die Dateien im
+Mpeg2Schnitt MOD Ordner gespeichert.
+Diese umgewandelten Dateien verbleiben auch nach Programmende im angegebenen
+Ordner.
+
+1.4) ProjectX Ausgabe Ordner aufräumen
+Dieser Menüpunkt bewirkt, daß alle von ProjectX angelegten Dateitypen:
+	MPV/M2V/MPA/MP2/AC3/IDD/TXT
+gelöscht werden. Andere Dateien werden nicht gelöscht.
+
+1.5) Programmpfade automatisch suchen
+Dieser Menüpunkt startet eine automatische Suche auf dem Laufwerk C:\ nach
+den benötigten Dateien "PROJECTX.JAR" und "JAVA.EXE".
+Sind die Dateien anders benannt oder befinden sie sich nicht auf dem Laufwerk C:,
+so müssen die Pfadangaben manuell eingestellt werden.
+
+1.6.) ProjectX starten
+ProjectX kann mit GUI aus Mpeg2Schnitt gestartet werden.
+
+
+
+2.) Menüpunkt "DVD"
+
+2.1) DVD Erstellungsmenü aufrufen
+Es kann das Menü zur Erstellung einer DVD mit weiteren Optionen aufgerufen werden.
+
+2.2) NERO Burning ROM Pfad festlegen
+Mit dieser manuellen Einstellung wird festgelegt, wo sich das DVD Brennprogramm
+installiert ist. Ist keine NERO Installation auf dem PC vorhanden, werden die
+DVD Brennfunktionen deaktiviert.
+
+2.3) NERO Burning ROM automatisch suchen
+Dieser Menüpunkt startet eine automatische Suche auf dem Laufwerk C:\ nach
+der benötigten Datei "NEROCMD.EXE". Befindet sich die Datei nicht auf dem Laufwerk C:,
+so muß die Pfadangaben manuell eingestellt werden.
+Kann die "NEROCMD.EXE" nicht automatisch gefunden werden, dann werden die
+DVD Brennfunktionen deaktiviert.
+
+2.4) DVD Erstellungsmenü automatisch nach Schneiden öffnen
+Das Menü zur Erstellung einer DVD wird automatisch nach einem Schneidevorgang in
+Mpeg2Schnitt mit den geschnittenen Dateien geöffnet.
+
+2.5) DVD automatisch nach Schneiden erstellen
+Nach einem Schneidevorgang in Mpeg2Schnitt werden die geschnittenen Dateien automatisch
+als DVD erstellt. Ob eine ISO Datei erstellt wird und eine DVD gebrannt wird hängt
+davon ab, welche Einstellungen im DVD Erstellungsmenü aktuell gesetzt sind.
+
+
+
+
+ProjectX Funktionen:
+--------------------
+
+Taste			Funktion
++			Datei zur Importliste hinzufügen
+-			Datei von Importliste löschen
+Liste löschen		Importliste löschen
+Import			Importdateien mit ProjectX umwandeln und in Mpeg2Schnitt laden
+Umwandlung		Importdateien mit ProjectX nur umwandeln
+Beenden			Import Fenster schließen
+hoch			ausgewählter Eintrag in Import Liste nach oben schieben
+runter			ausgewählter Eintrag in Import Liste nach unten schieben

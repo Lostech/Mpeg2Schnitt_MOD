@@ -1,0 +1,106 @@
+//
+//	Mpeg2Schnitt MOD Sprachen Stringtabelle
+//	verwendbar ab MOD Extension Version 0.2
+//
+//
+//	(c) 2006 Lostech
+//
+//
+
+
+//Sprachenübersetzung
+STRINGTABLE FIXED IMPURE 
+BEGIN
+	//Deutsch
+	10000	"ProjectX"
+	10001	"Dateien mit ProjectX importieren"
+	10002	"ProjectX Pfad festlegen"
+	10003	"ProjectX Ausgabe Ordner festlegen"
+	10004	"JAVA Runtime Pfad festlegen"
+	10005	"Über MOD Extension ..."
+	10006	"Liste löschen"
+	10007	"Import"
+	10008	"Umwandlung"
+	10009	"Beenden"
+	10010	"Datei"
+	10011	"Pfad"
+	10012	"Größe"
+	10013	"ProjectX Pfad:"
+	10014	"JAVA Runtime Pfad:"
+	10015	"ProjectX Ausgabe Ordner:"
+	10016	"Einstellungen:"
+	10017	"Bitte zuerst ProjectX und/oder JAVA Pfad einstellen!"
+	10018	"Kein ProjectX Ausgabe Ordner eingestellt! Verwende Mpeg2Schnitt Programm Ordner."
+	10019	"Fehler: Import Dateien oder Ausgabe Ordner nicht verfügbar!"
+	10020	"Fehler: ProjectX Archiv (PROJECTX.JAR) nicht gefunden!"
+	10021	"Fehler: JAVA Runtime (JAVA.EXE) nicht gefunden!"
+	10022	"ProjectX JAVA Archiv (JAR)|*.jar|Alle Dateien|*.*"
+	10023	"JAVA Runtime (JAVA.EXE)|java.exe|Alle Dateien|*.*"
+	10024	"ProjectX Ausgabe Ordner aufräumen"
+	10025	"Sollen alle MPV/M2V/MPA/MP2/AC3/IDD/TXT Dateien im ProjectX Ausgabe Ordner gelöscht werden?"
+	10026	"Fehler: ProjectX Umwandlung fehlgeschlagen oder abgebrochen!"
+	10027	"ProjectX Umwandlung erfolgreich!"
+	10028	"Datei hinzufügen"
+	10029	"Alle Dateien|*.*|TechniSat DigiCorder Dateien|*.vid;*.aud;*.aux*|"
+	10030	"Abbruch"
+	10031	" Datei(en) gelöscht!"
+	10032	"Keine Dateien gelöscht!"
+	10033	"(Es wird empfohlen geöffnete Projekte vorher zu schließen!)"
+	10034	"Programmpfade automatisch suchen"
+	10035	"Sollen die benötigten Programmpfade automatisch gesucht werden?"
+	10036	"(Dies kann einige Minuten in Anspruch nehmen!)"
+	10037	"Suche 'PROJECTX.JAR': "
+	10038	"Suche 'JAVA.EXE': "
+	10039	"ProjectX starten"
+	10040	"hoch"
+	10041	"runter"
+	10042	"Typ"
+	
+	
+	//English
+	11000	"ProjectX"
+	11001	"Import files with ProjectX"
+	11002	"ProjectX Path Setup"
+	11003	"ProjectX Output Folder Setup"
+	11004	"JAVA Runtime Path Setup"
+	11005	"About MOD Extension ..."
+	11006	"Clear List"
+	11007	"Import"
+	11008	"Conversion"
+	11009	"Close"
+	11010	"File"
+	11011	"Path"
+	11012	"Size"
+	11013	"ProjectX Path:"
+	11014	"JAVA Runtime Path:"
+	11015	"ProjectX Output Folder:"
+	11016	"Settings:"
+	11017	"Please setup ProjectX and/or JAVA path!"
+	11018	"No ProjectX output folder is set up! Now Using Mpeg2Schnitt program folder."
+	11019	"Error: Import files or output folder not available!"
+	11020	"Error: ProjectX archive (PROJECTX.JAR) not found!"
+	11021	"Error: JAVA Runtime (JAVA.EXE) not found!"
+	11022	"ProjectX JAVA Archive (JAR)|*.jar|All Files|*.*"
+	11023	"JAVA Runtime (JAVA.EXE)|java.exe|All Files|*.*"
+	11024	"Clean ProjectX Output Folder"
+	11025	"Shall all MPV/M2V/MPA/MP2/AC3/IDD/TXT files within the ProjectX output folder be deleted?"
+	11026	"Error: ProjectX conversion failed or has been cancelled!"
+	11027	"ProjectX conversion succeeded!"
+	11028	"Add File"
+	11029	"All Files|*.*|TechniSat DigiCorder Files|*.vid;*.aud;*.aux*|"
+	11030	"Cancel"
+	11031	" file(s) deleted!"
+	11032	"No files deleted!"
+	11033	"(It is recommended to close open projects!)"
+	11034	"Automatic search for program paths"
+	11035	"Shall the needed program paths be searched automatically?"
+	11036	"(This can take several minutes!)"
+	11037	"Searching 'PROJECTX.JAR': "
+	11038	"Searching 'JAVA.EXE': "
+	11039	"Start ProjectX"
+	11040	"up"
+	11041	"down"
+	11042	"Type"
+	
+	//jede weitere Sprache startet bei der nächsten 1000er Folge z.B. 12000, 13000 etc.
+END
